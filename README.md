@@ -14,7 +14,7 @@ implementation. No AMD IP or Vitis software libraries are required by the demo.
 
 ## Working demo
 
-The current target is [`phase5/`](phase5/README.md): a bare-metal VexRiscv
+The main example is [`examples/tester/`](examples/tester/README.md): a bare-metal VexRiscv
 RV32I CPU, native LCD color patterns, a compact software UI, and five apps.
 
 | App | Operation |
@@ -37,8 +37,15 @@ official core-framework compatibility, an SD-card explorer, or a Linux image.
 
 1. [Build and simulation instructions](docs/BUILD.md)
 2. [Hardware results and limitations](docs/STATUS.md)
-3. [Tester details and memory map](phase5/README.md)
+3. [Tester details and memory map](examples/tester/README.md)
 4. [Licensing and provenance](LICENSE.md)
+
+After setting up the documented environment, generate the main example from
+the repository root:
+
+```bash
+python examples/tester/generate.py --output "$PWD/build/tester-rtl-001"
+```
 
 The pinned environment is **Linux x86-64 / Ubuntu 22.04 / Python 3.10**;
 WSL2 was used for the recorded builds. Tool archives and Python packages are
@@ -64,18 +71,18 @@ FPGA image if a game is launched from its menu.
 
 ## Source layout
 
-- `phase5/`: current physical target, five-app C firmware and simulations.
-- `phase4/`: physical clocking, primitive models and optional programming helpers.
-- `phase3/`: LCD, QSPI and external-memory components and reference tests.
-- `soc/`: pinned LiteX environment, CPU startup and earlier integration target.
-- `gateware/`, `constraints/`, `sim/`, `tests/`: initial probe and guard tests.
-- `tools/`: pinned open-source tool bootstrap and shared build helpers.
+- `examples/tester/`: the single main SoC example and five-app C firmware.
+- `gamebub/`: reusable board, clocks, LCD, ESP32, memory and output peripherals.
+- `tests/`: CPU/app, QSPI, clock, video, memory and portable source checks.
+- `tools/`: pinned dependency bootstrap, implementation and JTAG helpers.
 - `docs/`: architecture diagram, public instructions and acceptance summary.
 
-Earlier phase READMEs describe their historical milestone, not the latest
-hardware status. Generated build trees, machine-specific logs and historical
-local-release packagers are not published here. No prebuilt release assets
-are included in this initial source import.
+Generated build trees and machine-specific logs are not published here.
+Earlier layouts are available in Git history, not as competing examples.
+No prebuilt release assets are included in this source tree.
+
+Contributions follow [LiteX coding style](https://github.com/enjoy-digital/litex/blob/master/doc/coding_style.md);
+see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 

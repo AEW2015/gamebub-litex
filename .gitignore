@@ -13,6 +13,5 @@ build/
 obj_dir/
 .env
 .env.*
-# Local frozen-release packagers require private historical handoffs.
+# Local release packaging and outputs are not public source.
 **/package*.py
-phase4/loader/DISCOVERY.md

@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parent
 def render(version):
     svg = ['<svg xmlns="http://www.w3.org/2000/svg" width="1580" height="960" viewBox="0 0 1580 960">',
            '<title>GameBub LiteX Tester</title>',
-           '<desc>Simplified Phase5 architecture. Independent peripheral lanes avoid wire crossings. ESP32 overlay and CPU UI feed the native LCD compositor. Memory controllers serve CPU accesses, not an external framebuffer.</desc>',
+           '<desc>Simplified tester architecture. Independent peripheral lanes avoid wire crossings. ESP32 overlay and CPU UI feed the native LCD compositor. Memory controllers serve CPU accesses, not an external framebuffer.</desc>',
            '<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#606060"/></marker></defs>',
            '<rect width="1580" height="960" fill="white"/>']
     blocks, segments = [], []

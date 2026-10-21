@@ -16,14 +16,14 @@ From a fresh checkout, install into **new, unused** prefixes:
 git clone https://github.com/AEW2015/gamebub-litex.git
 cd gamebub-litex
 bash tools/bootstrap_linux.sh /opt/gamebub-openxc7-20261021
-bash soc/bootstrap_soc.sh
-/opt/gamebub-litex-20261021/venv/bin/python phase3/memory/bootstrap.py
+bash tools/bootstrap_soc.sh
+/opt/gamebub-litex-20261021/venv/bin/python tools/bootstrap_memory.py
 ```
 
 The bootstrap scripts verify exact archive hashes. Do not overwrite an existing
 tool installation to reproduce a build. The dated `/opt` locations are deliberate
 pins of the tested environment, not paths into a developer's private checkout.
-`soc/toolchain-lock.json` and `phase3/memory/dependencies.json` record the packages.
+`tools/toolchain-lock.json` and `tools/memory-dependencies.json` record the packages.
 
 ```bash
 export PATH=/opt/gamebub-litex-20261021/venv/bin:/opt/gamebub-litex-20261021/toolchain/usr/bin:/opt/gamebub-openxc7-20261021/bin:/opt/gamebub-openxc7-20261021/oss-cad-suite/bin:/usr/bin:/bin
@@ -35,7 +35,7 @@ fresh; keep failed attempts and their logs rather than silently reusing them.
 ## Generate the current tester
 
 ```bash
-python phase5/generate.py --output "$PWD/build/tester-rtl-001"
+python examples/tester/generate.py --output "$PWD/build/tester-rtl-001"
 ```
 
 This builds the bare-metal RV32I ELF, embeds its ROM into generated RTL, and
@@ -46,10 +46,10 @@ The ELF is `build/tester-rtl-001/firmware/diagnostic.elf`.
 
 ```bash
 python -m unittest discover -s tests -v
-python phase5/run_host_test.py --bundle "$PWD/build/tester-rtl-001" --output "$PWD/build/host-test-001"
-python phase5/run_protocol.py --output "$PWD/build/qspi-test-001"
-python phase5/run_endpoint_timing.py --output "$PWD/build/qspi-matrix-001"
-python phase5/sim_apps.py --bundle "$PWD/build/tester-rtl-001" --output "$PWD/build/tester-sim-001"
+python tests/tester/run_host.py --bundle "$PWD/build/tester-rtl-001" --output "$PWD/build/host-test-001"
+python tests/esp32/run.py --output "$PWD/build/qspi-test-001"
+python tests/esp32/run_matrix.py --output "$PWD/build/qspi-matrix-001"
+python tests/tester/run.py --bundle "$PWD/build/tester-rtl-001" --output "$PWD/build/tester-sim-001"
 ```
 
 The full simulation takes substantially longer than the host and QSPI tests.
@@ -60,14 +60,15 @@ I/O timing, audible sound, motor movement or analog behavior.
 An optional standalone memory comparison now uses the included fixture:
 
 ```bash
-python phase3/memory/run_tests.py --output "$PWD/build/memory-test-001"
-python phase3/video/run.py --reference "$PWD/phase3/video/reference/gamebub_axis_raster.v" --output "$PWD/build/video-test-001"
+python tests/memory/run.py --output "$PWD/build/memory-test-001"
+python tests/video/run.py --reference "$PWD/tests/video/reference/gamebub_axis_raster.v" --output "$PWD/build/video-test-001"
+python tests/clocking/run.py --output "$PWD/build/clocking-test-001"
 ```
 
 ## Open-source implementation
 
 ```bash
-python phase5/build.py \
+python examples/tester/build.py \
   --tools /opt/gamebub-openxc7-20261021 \
   --gateware-dir "$PWD/build/tester-rtl-001/gateware" \
   --xdc "$PWD/build/tester-rtl-001/physical.xdc" \
@@ -91,7 +92,7 @@ your own cable serial and calculate the new image's SHA-256:
 $env:GAMEBUB_JTAG_SERIAL = 'YOUR_HS2_SERIAL'
 $bit = 'C:/your-build/gamebub_soc.bit' # use the actual generated bitstream path
 $sha = (Get-FileHash -LiteralPath $bit -Algorithm SHA256).Hash
-& 'C:/Xilinx/2025.2/Vivado/bin/vivado.bat' -mode batch -source phase4/hardware.tcl -tclargs program $bit $sha
+& 'C:/Xilinx/2025.2/Vivado/bin/vivado.bat' -mode batch -source tools/program.tcl -tclargs program $bit $sha
 ```
 
 The helper refuses missing serials, an unexpected device/chain or a wrong hash.
@@ -99,14 +100,14 @@ It programs only volatile FPGA configuration; it does not write persistent flash
 or ESP32 firmware. Verify board revision, target, simulation and build results
 yourself. Never select a cable simply because it is first in a target list.
 
-After Vivado releases the target, `phase5/monitor.tcl` can be run in XSDB with
+After Vivado releases the target, `tools/monitor.tcl` can be run in XSDB with
 the same environment variable to read USER1 JTAG UART. `GB5_OK` means UI startup,
 not interactive memory-test completion. Press A on each memory page and observe
 its result. Avoid launching a game from the ESP32 menu while using this image.
 
-## Earlier phases
+## One main example
 
-`soc/` and `phase3/` READMEs retain the earlier simulation milestones.
-`phase4/` records physical bring-up. The current target is always `phase5/`.
-Historical private release packagers and frozen local build trees are omitted;
-their absence does not affect the build and simulation commands above.
+The tester is the single maintained example under `examples/tester/`.
+Reusable peripherals live in `gamebub/`; test fixtures live under `tests/`.
+Older experiments remain in Git history. Do not use historical checkout paths
+as dependencies of this example.
