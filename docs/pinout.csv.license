@@ -1,0 +1,5 @@
+SPDX-License-Identifier: CERN-OHL-S-2.0
+
+Pin assignments derived from GameBub Rev4 constraints:
+https://github.com/elipsitz/gamebub/blob/v1.0.2/fpga/verilog/handheld/rev_4.xdc
+See ../LICENSES/CERN-OHL-S-2.0.txt and PINOUT.md for provenance.

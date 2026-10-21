@@ -79,6 +79,17 @@ No new place-and-route or hardware deployment is claimed for this cleanup.
 Local retired-layout leftovers are archived separately; the original tested
 workspace and release remain intact.
 
+## Pinout and pre-release documentation audit
+
+The generated [pinout](PINOUT.md) covers all 198 signal constraints: 145
+platform-defined pins and 53 unmapped pins, including eight TMDS_33 signals.
+All per-signal package/standard tuples agree with the official v1.0.2 Rev4 XDC.
+The resource aliases and eleven held control outputs were additionally checked
+against the actual LiteX platform. All 19 portable tests and pinout-drift checks
+passed; gateware and firmware were not modified by this documentation update.
+See the [tagged-release checklist](RELEASE_CHECKLIST.md) for remaining acceptance
+work. No GitHub Release, release tag or hardware programming was performed.
+
 ## Limits
 
 - Internal clocks: CPU 50 MHz; QSPI service 200 MHz; video ~29.358 MHz.

@@ -39,6 +39,8 @@ official core-framework compatibility, an SD-card explorer, or a Linux image.
 2. [Hardware results and limitations](docs/STATUS.md)
 3. [Tester details and memory map](examples/tester/README.md)
 4. [Licensing and provenance](LICENSE.md)
+5. [Complete Rev4 pinout and interface coverage](docs/PINOUT.md)
+6. [First tagged release checklist](docs/RELEASE_CHECKLIST.md)
 
 After setting up the documented environment, generate the main example from
 the repository root:

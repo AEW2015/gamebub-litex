@@ -15,6 +15,8 @@ upstream provenance take precedence.
 Unmarked copied reference RTL in `tests/memory/reference/` and
 `tests/video/reference/` is GameBub-derived FPGA material under
 CERN-OHL-S-2.0, not 0BSD. Its source path and hash are recorded alongside it.
+The derived pinout tables in `docs/PINOUT.md` and `docs/pinout.csv` likewise
+retain CERN-OHL-S-2.0; the CSV has an accompanying license sidecar.
 The current and regression-reference ESP32 RTL share the provenance
 described in [docs/ESP32_PROTOCOL.md](docs/ESP32_PROTOCOL.md).
 The current endpoint contains timing adaptations described in that document.

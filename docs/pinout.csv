@@ -1,0 +1,199 @@
+group,signal,package_pin,iostandard,litex_resource,fpga_direction,tester_usage
+Clock,clk_50mhz,P17,LVCMOS33,clk50,input,tester
+Cartridge,cart_bank0[0],A16,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank0[1],B16,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank0[2],D12,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank0[3],C12,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank0[4],D13,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank0[5],F13,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank0[6],C14,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank0[7],D14,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank1[0],B11,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank1[1],B12,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank1[2],A13,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank1[3],B13,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank1[4],A14,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank1[5],B14,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank1[6],A15,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank1[7],C15,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank2[0],D5,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank2[1],C5,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank2[2],C6,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank2[3],D7,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank2[4],C7,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank2[5],D8,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank2[6],D4,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank2[7],E5,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank3[0],C4,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank3[1],B7,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank3[2],A6,LVCMOS33,,not configured,unmapped
+Cartridge,cart_bank3[3],B6,LVCMOS33,,not configured,unmapped
+Cartridge,cart_pin30,E15,LVCMOS33,,not configured,unmapped
+Cartridge,cart_pin30_dir,C16,LVCMOS33,cart_pin30_dir,output,held 0
+Cartridge,cart_pin31,F16,LVCMOS33,,not configured,unmapped
+Cartridge,cart_pin31_dir,F15,LVCMOS33,cart_pin31_dir,output,held 0
+Cartridge,cart_bank0_dir,D15,LVCMOS33,cart_bank0_dir,output,held 0
+Cartridge,cart_bank1_dir,A11,LVCMOS33,cart_bank1_dir,output,held 0
+Cartridge,cart_bank2_dir,F6,LVCMOS33,cart_bank2_dir,output,held 0
+Cartridge,cart_bank3_dir,B4,LVCMOS33,cart_bank3_dir,output,held 0
+Cartridge,cart_switch,J13,LVCMOS33,,not configured,unmapped
+Cartridge,cart_oe_n,A5,LVCMOS33,cart_oe_n,output,held 1
+Link port,link_so,K15,LVCMOS33,,not configured,unmapped
+Link port,link_si,J15,LVCMOS33,,not configured,unmapped
+Link port,link_sd,H15,LVCMOS33,,not configured,unmapped
+Link port,link_sc,G16,LVCMOS33,,not configured,unmapped
+Link port,link_so_dir,K16,LVCMOS33,link_so_dir,output,held 0
+Link port,link_si_dir,J14,LVCMOS33,link_si_dir,output,held 0
+Link port,link_sd_dir,H14,LVCMOS33,link_sd_dir,output,held 0
+Link port,link_sc_dir,G14,LVCMOS33,link_sc_dir,output,held 0
+LCD,lcd_dotclk,T18,LVCMOS33,lcd.dotclk,output,tester
+LCD,lcd_hsync,U18,LVCMOS33,lcd.hsync,output,tester
+LCD,lcd_vsync,T16,LVCMOS33,lcd.vsync,output,tester
+LCD,lcd_data_en,R18,LVCMOS33,lcd.de,output,tester
+LCD,lcd_data_b[0],R17,LVCMOS33,lcd.b[0],output,tester
+LCD,lcd_data_b[1],P18,LVCMOS33,lcd.b[1],output,tester
+LCD,lcd_data_b[2],N17,LVCMOS33,lcd.b[2],output,tester
+LCD,lcd_data_b[3],M17,LVCMOS33,lcd.b[3],output,tester
+LCD,lcd_data_b[4],M18,LVCMOS33,lcd.b[4],output,tester
+LCD,lcd_data_b[5],L16,LVCMOS33,lcd.b[5],output,tester
+LCD,lcd_data_b[6],L18,LVCMOS33,lcd.b[6],output,tester
+LCD,lcd_data_b[7],K17,LVCMOS33,lcd.b[7],output,tester
+LCD,lcd_data_g[0],J17,LVCMOS33,lcd.g[0],output,tester
+LCD,lcd_data_g[1],J18,LVCMOS33,lcd.g[1],output,tester
+LCD,lcd_data_g[2],H16,LVCMOS33,lcd.g[2],output,tester
+LCD,lcd_data_g[3],H17,LVCMOS33,lcd.g[3],output,tester
+LCD,lcd_data_g[4],G18,LVCMOS33,lcd.g[4],output,tester
+LCD,lcd_data_g[5],G17,LVCMOS33,lcd.g[5],output,tester
+LCD,lcd_data_g[6],F18,LVCMOS33,lcd.g[6],output,tester
+LCD,lcd_data_g[7],E17,LVCMOS33,lcd.g[7],output,tester
+LCD,lcd_data_r[0],E18,LVCMOS33,lcd.r[0],output,tester
+LCD,lcd_data_r[1],E16,LVCMOS33,lcd.r[1],output,tester
+LCD,lcd_data_r[2],D18,LVCMOS33,lcd.r[2],output,tester
+LCD,lcd_data_r[3],D17,LVCMOS33,lcd.r[3],output,tester
+LCD,lcd_data_r[4],C17,LVCMOS33,lcd.r[4],output,tester
+LCD,lcd_data_r[5],B18,LVCMOS33,lcd.r[5],output,tester
+LCD,lcd_data_r[6],B17,LVCMOS33,lcd.r[6],output,tester
+LCD,lcd_data_r[7],A18,LVCMOS33,lcd.r[7],output,tester
+Buttons,btn_a,L6,LVCMOS33,buttons_n[0],input,tester
+Buttons,btn_b,K6,LVCMOS33,buttons_n[1],input,tester
+Buttons,btn_x,M6,LVCMOS33,buttons_n[2],input,tester
+Buttons,btn_y,N5,LVCMOS33,buttons_n[3],input,tester
+Buttons,btn_up,N16,LVCMOS33,buttons_n[4],input,tester
+Buttons,btn_down,L13,LVCMOS33,buttons_n[5],input,tester
+Buttons,btn_left,L14,LVCMOS33,buttons_n[6],input,tester
+Buttons,btn_right,M16,LVCMOS33,buttons_n[7],input,tester
+Buttons,btn_l,K13,LVCMOS33,buttons_n[8],input,tester
+Buttons,btn_r,K5,LVCMOS33,buttons_n[9],input,tester
+Buttons,btn_start,H6,LVCMOS33,buttons_n[10],input,tester
+Buttons,btn_select,H5,LVCMOS33,buttons_n[11],input,tester
+Audio,dac_mclk,T15,LVCMOS33,dac_mclk,output,tester
+Audio,dac_wclk,R15,LVCMOS33,dac_wclk,output,tester
+Audio,dac_bclk,R16,LVCMOS33,dac_bclk,output,tester
+Audio,dac_din,P15,LVCMOS33,dac_din,output,tester
+ESP32,mcu_spi_clk,T14,LVCMOS33,qspi.sck,input,tester
+ESP32,mcu_spi_cs_n,U17,LVCMOS33,qspi.cs_n,input,tester
+ESP32,mcu_spi_d[0],V15,LVCMOS33,qspi.dq[0],inout,tester
+ESP32,mcu_spi_d[1],V16,LVCMOS33,qspi.dq[1],inout,tester
+ESP32,mcu_spi_d[2],U16,LVCMOS33,qspi.dq[2],inout,tester
+ESP32,mcu_spi_d[3],V17,LVCMOS33,qspi.dq[3],inout,tester
+ESP32,mcu_irq_n,N15,LVCMOS33,esp_irq_gate,output,tester
+HDMI,hdmi_clk_p,C2,TMDS_33,,not configured,unmapped
+HDMI,hdmi_clk_n,C1,TMDS_33,,not configured,unmapped
+HDMI,hdmi_data_p[0],A4,TMDS_33,,not configured,unmapped
+HDMI,hdmi_data_n[0],A3,TMDS_33,,not configured,unmapped
+HDMI,hdmi_data_p[1],B3,TMDS_33,,not configured,unmapped
+HDMI,hdmi_data_n[1],B2,TMDS_33,,not configured,unmapped
+HDMI,hdmi_data_p[2],B1,TMDS_33,,not configured,unmapped
+HDMI,hdmi_data_n[2],A1,TMDS_33,,not configured,unmapped
+USB-C sideband,usb_sbu_1,G13,LVCMOS33,,not configured,unmapped
+USB-C sideband,usb_sbu_2,F14,LVCMOS33,,not configured,unmapped
+Vibration,vibrate_in1,F5,LVCMOS33,vibrate_in1,output,tester
+Vibration,vibrate_in2,G6,LVCMOS33,vibrate_in2,output,tester
+PMOD,pmod[0],V14,LVCMOS33,,not configured,unmapped
+PMOD,pmod[1],U14,LVCMOS33,,not configured,unmapped
+PMOD,pmod[2],U13,LVCMOS33,,not configured,unmapped
+PMOD,pmod[3],R13,LVCMOS33,,not configured,unmapped
+Test points,tp[0],M14,LVCMOS33,,not configured,unmapped
+Test points,tp[1],M13,LVCMOS33,,not configured,unmapped
+Test points,tp[2],N14,LVCMOS33,,not configured,unmapped
+Test points,tp[3],P14,LVCMOS33,,not configured,unmapped
+SRAM,sram_a[0],V1,LVCMOS33,sram.a[0],output,tester
+SRAM,sram_a[1],U2,LVCMOS33,sram.a[1],output,tester
+SRAM,sram_a[2],V2,LVCMOS33,sram.a[2],output,tester
+SRAM,sram_a[3],U3,LVCMOS33,sram.a[3],output,tester
+SRAM,sram_a[4],U4,LVCMOS33,sram.a[4],output,tester
+SRAM,sram_a[5],V10,LVCMOS33,sram.a[5],output,tester
+SRAM,sram_a[6],U11,LVCMOS33,sram.a[6],output,tester
+SRAM,sram_a[7],V11,LVCMOS33,sram.a[7],output,tester
+SRAM,sram_a[8],U12,LVCMOS33,sram.a[8],output,tester
+SRAM,sram_a[9],V12,LVCMOS33,sram.a[9],output,tester
+SRAM,sram_a[10],T1,LVCMOS33,sram.a[10],output,tester
+SRAM,sram_a[11],U1,LVCMOS33,sram.a[11],output,tester
+SRAM,sram_a[12],R3,LVCMOS33,sram.a[12],output,tester
+SRAM,sram_a[13],P5,LVCMOS33,sram.a[13],output,tester
+SRAM,sram_a[14],T3,LVCMOS33,sram.a[14],output,tester
+SRAM,sram_a[15],R11,LVCMOS33,sram.a[15],output,tester
+SRAM,sram_a[16],R12,LVCMOS33,sram.a[16],output,tester
+SRAM,sram_a[17],T13,LVCMOS33,sram.a[17],output,tester
+SRAM,sram_io[0],T5,LVCMOS33,sram.dq[0],inout,tester
+SRAM,sram_io[1],V5,LVCMOS33,sram.dq[1],inout,tester
+SRAM,sram_io[2],U6,LVCMOS33,sram.dq[2],inout,tester
+SRAM,sram_io[3],V6,LVCMOS33,sram.dq[3],inout,tester
+SRAM,sram_io[4],U7,LVCMOS33,sram.dq[4],inout,tester
+SRAM,sram_io[5],V7,LVCMOS33,sram.dq[5],inout,tester
+SRAM,sram_io[6],U8,LVCMOS33,sram.dq[6],inout,tester
+SRAM,sram_io[7],U9,LVCMOS33,sram.dq[7],inout,tester
+SRAM,sram_io[8],T4,LVCMOS33,sram.dq[8],inout,tester
+SRAM,sram_io[9],R5,LVCMOS33,sram.dq[9],inout,tester
+SRAM,sram_io[10],R6,LVCMOS33,sram.dq[10],inout,tester
+SRAM,sram_io[11],T6,LVCMOS33,sram.dq[11],inout,tester
+SRAM,sram_io[12],R7,LVCMOS33,sram.dq[12],inout,tester
+SRAM,sram_io[13],R8,LVCMOS33,sram.dq[13],inout,tester
+SRAM,sram_io[14],T8,LVCMOS33,sram.dq[14],inout,tester
+SRAM,sram_io[15],T9,LVCMOS33,sram.dq[15],inout,tester
+SRAM,sram_ce_n,V4,LVCMOS33,sram.ce_n,output,tester
+SRAM,sram_we_n,V9,LVCMOS33,sram.we_n,output,tester
+SRAM,sram_oe_n,T11,LVCMOS33,sram.oe_n,output,tester
+SRAM,sram_ub_n,R10,LVCMOS33,sram.ub_n,output,tester
+SRAM,sram_lb_n,T10,LVCMOS33,sram.lb_n,output,tester
+SDRAM,sdram_dq[0],R2,LVCMOS33,sdram.dq[0],inout,tester
+SDRAM,sdram_dq[1],R1,LVCMOS33,sdram.dq[1],inout,tester
+SDRAM,sdram_dq[2],P2,LVCMOS33,sdram.dq[2],inout,tester
+SDRAM,sdram_dq[3],N2,LVCMOS33,sdram.dq[3],inout,tester
+SDRAM,sdram_dq[4],N1,LVCMOS33,sdram.dq[4],inout,tester
+SDRAM,sdram_dq[5],M2,LVCMOS33,sdram.dq[5],inout,tester
+SDRAM,sdram_dq[6],M1,LVCMOS33,sdram.dq[6],inout,tester
+SDRAM,sdram_dq[7],L3,LVCMOS33,sdram.dq[7],inout,tester
+SDRAM,sdram_dq[8],L4,LVCMOS33,sdram.dq[8],inout,tester
+SDRAM,sdram_dq[9],L5,LVCMOS33,sdram.dq[9],inout,tester
+SDRAM,sdram_dq[10],M4,LVCMOS33,sdram.dq[10],inout,tester
+SDRAM,sdram_dq[11],M3,LVCMOS33,sdram.dq[11],inout,tester
+SDRAM,sdram_dq[12],N6,LVCMOS33,sdram.dq[12],inout,tester
+SDRAM,sdram_dq[13],N4,LVCMOS33,sdram.dq[13],inout,tester
+SDRAM,sdram_dq[14],P3,LVCMOS33,sdram.dq[14],inout,tester
+SDRAM,sdram_dq[15],P4,LVCMOS33,sdram.dq[15],inout,tester
+SDRAM,sdram_a[0],G2,LVCMOS33,sdram.a[0],output,tester
+SDRAM,sdram_a[1],F1,LVCMOS33,sdram.a[1],output,tester
+SDRAM,sdram_a[2],E2,LVCMOS33,sdram.a[2],output,tester
+SDRAM,sdram_a[3],E1,LVCMOS33,sdram.a[3],output,tester
+SDRAM,sdram_a[4],E7,LVCMOS33,sdram.a[4],output,tester
+SDRAM,sdram_a[5],D3,LVCMOS33,sdram.a[5],output,tester
+SDRAM,sdram_a[6],D2,LVCMOS33,sdram.a[6],output,tester
+SDRAM,sdram_a[7],E6,LVCMOS33,sdram.a[7],output,tester
+SDRAM,sdram_a[8],E3,LVCMOS33,sdram.a[8],output,tester
+SDRAM,sdram_a[9],F3,LVCMOS33,sdram.a[9],output,tester
+SDRAM,sdram_a[10],G1,LVCMOS33,sdram.a[10],output,tester
+SDRAM,sdram_a[11],F4,LVCMOS33,sdram.a[11],output,tester
+SDRAM,sdram_a[12],G3,LVCMOS33,sdram.a[12],output,tester
+SDRAM,sdram_bs[0],H1,LVCMOS33,sdram.ba[0],output,tester
+SDRAM,sdram_bs[1],H2,LVCMOS33,sdram.ba[1],output,tester
+SDRAM,sdram_clk,J5,LVCMOS33,sdram.clk,output,tester
+SDRAM,sdram_we_n,K2,LVCMOS33,sdram.we_n,output,tester
+SDRAM,sdram_ldqm,L1,LVCMOS33,sdram.dm[0],output,tester
+SDRAM,sdram_udqm,K3,LVCMOS33,sdram.dm[1],output,tester
+SDRAM,sdram_cas_n,K1,LVCMOS33,sdram.cas_n,output,tester
+SDRAM,sdram_ras_n,J2,LVCMOS33,sdram.ras_n,output,tester
+SDRAM,sdram_cke[0],J4,LVCMOS33,sdram.cke[0],output,tester
+SDRAM,sdram_cke[1],H4,LVCMOS33,sdram.cke[1],output,tester
+SDRAM,sdram_cs_n[0],J3,LVCMOS33,sdram.cs_n[0],output,tester
+SDRAM,sdram_cs_n[1],G4,LVCMOS33,sdram.cs_n[1],output,tester

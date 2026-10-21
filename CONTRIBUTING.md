@@ -21,6 +21,7 @@ Before submitting:
 ```bash
 python -m unittest discover -s tests -v
 python -m compileall -q gamebub examples tools tests
+python tools/pinout.py --check
 ```
 
 For gateware changes, run the relevant functional simulations and regenerate
@@ -28,3 +29,8 @@ the tester. Check its ROM, register map and generated RTL against the prior
 version. A comment-only change does not authorize hardware programming or
 justify claiming a fresh routed timing result. Use [BUILD.md](docs/BUILD.md)
 for the longer tests and implementation flow.
+
+After a board-resource change, regenerate the pinout with `python tools/pinout.py --write`
+and run `python tools/pinout.py --check --check-platform` in the pinned LiteX
+environment. Documentation must distinguish mapped pins from unsupported interfaces;
+do not silently turn unused connector pins into active outputs.
