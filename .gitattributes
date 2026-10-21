@@ -1,0 +1,4 @@
+# Keep byte-hash-bound reference and gateware files unchanged across platforms.
+* -text
+*.sh text eol=lf
+*.png binary

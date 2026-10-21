@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1580" height="960" viewBox="0 0 1580 960">
+<title>GameBub LiteX Tester</title>
+<desc>Simplified Phase5 architecture. Independent peripheral lanes avoid wire crossings. ESP32 overlay and CPU UI feed the native LCD compositor. Memory controllers serve CPU accesses, not an external framebuffer.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#606060"/></marker></defs>
+<rect width="1580" height="960" fill="white"/>
+<path d="M250 70H1252L1280 98V840H278L250 812Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M250 70H1252L1280 98V840H278L250 812Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M250 70H1252L1280 98V840H278L250 812Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M250 70H1252L1280 98V840H278L250 812Z" fill="#fff" stroke="#555" stroke-width="1"/>
+<path d="M275 100H1233L1255 122V810H297L275 788Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M275 100H1233L1255 122V810H297L275 788Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M275 100H1233L1255 122V810H297L275 788Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M275 100H1233L1255 122V810H297L275 788Z" fill="#f3f3f3" stroke="#555" stroke-width="1"/>
+<path d="M440 175L600 175" fill="none" stroke="#606060" stroke-width="1.8" marker-start="url(#a)" marker-end="url(#a)"/>
+<path d="M440 285L520 285L520 220L600 220" fill="none" stroke="#606060" stroke-width="1.8" marker-start="url(#a)" marker-end="url(#a)"/>
+<path d="M715 250L715 420" fill="none" stroke="#606060" stroke-width="1.8"  />
+<path d="M370 400L370 420" fill="none" stroke="#606060" stroke-width="1.8"  />
+<path d="M1000 180L970 180L970 420" fill="none" stroke="#606060" stroke-width="1.8"  />
+<path d="M1100 360L1100 420" fill="none" stroke="#606060" stroke-width="1.8"  />
+<path d="M1200 180L1330 180" fill="none" stroke="#606060" stroke-width="1.8" marker-start="url(#a)" marker-end="url(#a)"/>
+<path d="M1200 320L1330 320" fill="none" stroke="#606060" stroke-width="1.8" marker-start="url(#a)" marker-end="url(#a)"/>
+<path d="M210 375L300 375" fill="none" stroke="#606060" stroke-width="1.8" marker-start="url(#a)" marker-end="url(#a)"/>
+<path d="M365 455L365 500" fill="none" stroke="#606060" stroke-width="1.8"  />
+<path d="M470 455L470 755" fill="none" stroke="#606060" stroke-width="1.8"  />
+<path d="M470 645L430 645" fill="none" stroke="#606060" stroke-width="1.8"  />
+<path d="M470 755L430 755" fill="none" stroke="#606060" stroke-width="1.8"  />
+<path d="M665 455L665 500" fill="none" stroke="#606060" stroke-width="1.8"  />
+<path d="M1100 455L1100 500" fill="none" stroke="#606060" stroke-width="1.8"  />
+<path d="M210 535L300 535" fill="none" stroke="#606060" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M300 645L210 645" fill="none" stroke="#606060" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M300 755L210 755" fill="none" stroke="#606060" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M665 570L665 700" fill="none" stroke="#606060" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M1100 570L1100 650L900 650L900 700" fill="none" stroke="#606060" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M1200 520L1330 520" fill="none" stroke="#606060" stroke-width="1.8" marker-start="url(#a)" marker-end="url(#a)"/>
+<path d="M1200 550L1330 550" fill="none" stroke="#606060" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M930 735L1330 735" fill="none" stroke="#606060" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M600 140H818L830 152V250H612L600 238Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M600 140H818L830 152V250H612L600 238Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M600 140H818L830 152V250H612L600 238Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M600 140H818L830 152V250H612L600 238Z" fill="#f3f3f3" stroke="#555" stroke-width="1"/>
+<text x="715.0" y="189.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">VexRiscv CPU</text>
+<text x="715.0" y="213.0" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="middle">RV32I · 50 MHz</text>
+<path d="M300 140H428L440 152V210H312L300 198Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M300 140H428L440 152V210H312L300 198Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M300 140H428L440 152V210H312L300 198Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M300 140H428L440 152V210H312L300 198Z" fill="#f3f3f3" stroke="#555" stroke-width="1"/>
+<text x="370.0" y="169.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">ROM</text>
+<text x="370.0" y="193.0" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="middle">16 KiB</text>
+<path d="M300 250H428L440 262V320H312L300 308Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M300 250H428L440 262V320H312L300 308Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M300 250H428L440 262V320H312L300 308Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M300 250H428L440 262V320H312L300 308Z" fill="#f3f3f3" stroke="#555" stroke-width="1"/>
+<text x="370.0" y="279.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">RAM</text>
+<text x="370.0" y="303.0" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="middle">16 KiB</text>
+<path d="M300 350H428L440 362V400H312L300 388Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M300 350H428L440 362V400H312L300 388Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M300 350H428L440 362V400H312L300 388Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M300 350H428L440 362V400H312L300 388Z" fill="#bbb" stroke="#555" stroke-width="1"/>
+<text x="370.0" y="381.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">JTAG UART</text>
+<path d="M1000 140H1188L1200 152V220H1012L1000 208Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M1000 140H1188L1200 152V220H1012L1000 208Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M1000 140H1188L1200 152V220H1012L1000 208Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M1000 140H1188L1200 152V220H1012L1000 208Z" fill="#bbb" stroke="#555" stroke-width="1"/>
+<text x="1100.0" y="186.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">SRAM controller</text>
+<path d="M1000 280H1188L1200 292V360H1012L1000 348Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M1000 280H1188L1200 292V360H1012L1000 348Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M1000 280H1188L1200 292V360H1012L1000 348Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M1000 280H1188L1200 292V360H1012L1000 348Z" fill="#bbb" stroke="#555" stroke-width="1"/>
+<text x="1100.0" y="314.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">LiteDRAM</text>
+<text x="1100.0" y="338.0" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="middle">SDR SDRAM</text>
+<text x="865" y="355" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="400" text-anchor="middle">LiteX SoC</text>
+<rect x="300" y="420" width="920" height="35" fill="#bbb" stroke="#555"/>
+<text x="760" y="444" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="middle">Wishbone / CSR</text>
+<path d="M300 500H418L430 512V570H312L300 558Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M300 500H418L430 512V570H312L300 558Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M300 500H418L430 512V570H312L300 558Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M300 500H418L430 512V570H312L300 558Z" fill="#bbb" stroke="#555" stroke-width="1"/>
+<text x="365.0" y="541.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">Buttons</text>
+<path d="M300 610H418L430 622V680H312L300 668Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M300 610H418L430 622V680H312L300 668Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M300 610H418L430 622V680H312L300 668Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M300 610H418L430 622V680H312L300 668Z" fill="#bbb" stroke="#555" stroke-width="1"/>
+<text x="365.0" y="651.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">Audio</text>
+<path d="M300 720H418L430 732V790H312L300 778Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M300 720H418L430 732V790H312L300 778Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M300 720H418L430 732V790H312L300 778Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M300 720H418L430 732V790H312L300 778Z" fill="#bbb" stroke="#555" stroke-width="1"/>
+<text x="365.0" y="761.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">Motor PWM</text>
+<path d="M600 500H718L730 512V570H612L600 558Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M600 500H718L730 512V570H612L600 558Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M600 500H718L730 512V570H612L600 558Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M600 500H718L730 512V570H612L600 558Z" fill="#bbb" stroke="#555" stroke-width="1"/>
+<text x="665.0" y="541.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">UI BRAM</text>
+<path d="M1000 500H1188L1200 512V570H1012L1000 558Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M1000 500H1188L1200 512V570H1012L1000 558Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M1000 500H1188L1200 512V570H1012L1000 558Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M1000 500H1188L1200 512V570H1012L1000 558Z" fill="#bbb" stroke="#555" stroke-width="1"/>
+<text x="1100.0" y="529.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">ESP32 QSPI</text>
+<text x="1100.0" y="553.0" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="middle">Overlay BRAM</text>
+<path d="M600 700H918L930 712V770H612L600 758Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M600 700H918L930 712V770H612L600 758Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M600 700H918L930 712V770H612L600 758Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M600 700H918L930 712V770H612L600 758Z" fill="#bbb" stroke="#555" stroke-width="1"/>
+<text x="765.0" y="729.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">LCD video</text>
+<text x="765.0" y="753.0" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="middle">Pattern + UI + overlay</text>
+<path d="M20 340H198L210 352V410H32L20 398Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M20 340H198L210 352V410H32L20 398Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M20 340H198L210 352V410H32L20 398Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M20 340H198L210 352V410H32L20 398Z" fill="#eee" stroke="#555" stroke-width="1"/>
+<text x="115.0" y="381.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">USB / JTAG</text>
+<path d="M20 500H198L210 512V570H32L20 558Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M20 500H198L210 512V570H32L20 558Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M20 500H198L210 512V570H32L20 558Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M20 500H198L210 512V570H32L20 558Z" fill="#eee" stroke="#555" stroke-width="1"/>
+<text x="115.0" y="541.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">12 buttons</text>
+<path d="M20 610H198L210 622V680H32L20 668Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M20 610H198L210 622V680H32L20 668Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M20 610H198L210 622V680H32L20 668Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M20 610H198L210 622V680H32L20 668Z" fill="#eee" stroke="#555" stroke-width="1"/>
+<text x="115.0" y="651.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">Audio DAC</text>
+<path d="M20 720H198L210 732V790H32L20 778Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M20 720H198L210 732V790H32L20 778Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M20 720H198L210 732V790H32L20 778Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M20 720H198L210 732V790H32L20 778Z" fill="#eee" stroke="#555" stroke-width="1"/>
+<text x="115.0" y="761.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">Motor</text>
+<path d="M1330 140H1538L1550 152V220H1342L1330 208Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M1330 140H1538L1550 152V220H1342L1330 208Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M1330 140H1538L1550 152V220H1342L1330 208Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M1330 140H1538L1550 152V220H1342L1330 208Z" fill="#eee" stroke="#555" stroke-width="1"/>
+<text x="1440.0" y="186.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">512 KiB SRAM</text>
+<path d="M1330 280H1538L1550 292V360H1342L1330 348Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M1330 280H1538L1550 292V360H1342L1330 348Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M1330 280H1538L1550 292V360H1342L1330 348Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M1330 280H1538L1550 292V360H1342L1330 348Z" fill="#eee" stroke="#555" stroke-width="1"/>
+<text x="1440.0" y="326.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">32 MiB SDRAM</text>
+<path d="M1330 500H1538L1550 512V570H1342L1330 558Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M1330 500H1538L1550 512V570H1342L1330 558Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M1330 500H1538L1550 512V570H1342L1330 558Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M1330 500H1538L1550 512V570H1342L1330 558Z" fill="#eee" stroke="#555" stroke-width="1"/>
+<text x="1440.0" y="541.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">ESP32</text>
+<path d="M1330 700H1538L1550 712V770H1342L1330 758Z" transform="translate(5,5)" fill="black" opacity="0.035"/>
+<path d="M1330 700H1538L1550 712V770H1342L1330 758Z" transform="translate(3,3)" fill="black" opacity="0.065"/>
+<path d="M1330 700H1538L1550 712V770H1342L1330 758Z" transform="translate(1.5,1.5)" fill="black" opacity="0.1"/>
+<path d="M1330 700H1538L1550 712V770H1342L1330 758Z" fill="#eee" stroke="#555" stroke-width="1"/>
+<text x="1440.0" y="729.0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">LCD</text>
+<text x="1440.0" y="753.0" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="middle">480 × 800</text>
+<text x="1265" y="509" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle">QSPI</text>
+<text x="1265" y="542" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle">IRQ</text>
+<circle cx="470" cy="645" r="2.5" fill="#606060"/>
+<text x="280" y="91" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" text-anchor="start">GameBub</text>
+<text x="1260" y="827" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" text-anchor="end">FPGA</text>
+<text x="790" y="905" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="400" text-anchor="middle">GameBub LiteX Tester</text>
+<text x="790" y="940" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="middle">Built with LiteX</text>
+</svg>

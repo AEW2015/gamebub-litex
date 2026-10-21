@@ -1,0 +1,6 @@
+{
+  "version": 6,
+  "proper_wire_crossings": [],
+  "wires_through_blocks": [],
+  "note": "Geometric diagram checks, not hardware/RTL verification. Endpoints and intended T junctions excluded."
+}

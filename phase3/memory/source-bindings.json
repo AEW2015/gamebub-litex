@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "comparison": {
+    "functional": "Actual external SRAM/LiteDRAM RTL read values compared against two independent upstream LiteX wishbone.SRAM reference instances",
+    "fixture": "Unmodified v1.6 pattern_data/prbs_next compiled and exercised on both physical pin models and LiteX references",
+    "limits": "No differential execution of legacy SERDES/MMCM controller; no PCB BOM confirmation; no hardware/PVT/timing signoff"
+  },
+  "sources": [
+    {
+      "file": "/mnt/d/codex_archive_2026/gamebub/gamebub-source/fpga/verilog/handheld/rev_4.xdc",
+      "sha256": "af2d5b6e9a157ed9636330cc1105180bd4bc7384e8c67d622119944b923953b8",
+      "role": "source/geometry/pin-selection comparison only; not instantiated"
+    },
+    {
+      "file": "/mnt/d/codex_archive_2026/gamebub/gamebub-source/fpga/src/main/scala/lib/mem/sdram/BurstSdramController.scala",
+      "sha256": "633276ddb12821e358a3d273b7473d5cc211fb2146fa89218ebbb6172dde2274",
+      "role": "source/geometry/pin-selection comparison only; not instantiated"
+    },
+    {
+      "file": "/mnt/d/codex_archive_2026/gamebub/gamebub-source/fpga/ip_repo/gamebub_sdram_mem_v1_6/src/serdes4_controller.sv",
+      "sha256": "bf989b7d9e65e1430dff02c61d1456aab8bf978b34475879987c9681cda86518",
+      "role": "source/geometry/pin-selection comparison only; not instantiated"
+    },
+    {
+      "file": "/mnt/d/codex_archive_2026/gamebub/gamebub-source/fpga/ip_repo/gamebub_sram_mem_v1_6/src/sram_test_pkg.sv",
+      "sha256": "724fd393ec09a812d8bda97a02c7639ad71ba19fb4be14f604264e512b7d6edc",
+      "role": "compiled unchanged functional pattern fixture"
+    },
+    {
+      "file": "/mnt/d/codex_archive_2026/gamebub/gamebub-source/fpga/ip_repo/gamebub_sram_mem_v1_6/src/sram_async_phy.sv",
+      "sha256": "68f622416670548937fa0e3b019eac0b60d0c3b9a7921c398e0971c16ab5c9fc",
+      "role": "source/geometry/pin-selection comparison only; not instantiated"
+    },
+    {
+      "file": "/opt/gamebub-litex-20261021/phase3-memory-python/litedram/phy/gensdrphy.py",
+      "sha256": "b82642ff897d2b19bd2721fe09fa71cd0272e50ffb69c3b079aaac46a3cc0dd7",
+      "role": "instantiated exact upstream LiteDRAM2024.12"
+    },
+    {
+      "file": "/opt/gamebub-litex-20261021/phase3-memory-python/litedram/modules.py",
+      "sha256": "a490a53b2bb82eff2c0efbb72c59c445d8c31f0cf03fa5538d88dde3ca5885cf",
+      "role": "instantiated exact upstream LiteDRAM2024.12"
+    },
+    {
+      "file": "/opt/gamebub-litex-20261021/phase3-memory-python/litedram/core/controller.py",
+      "sha256": "f1eae359651e2cdafddc36355bcd2d0f3f38038b6dac228347b7b9917d1335e6",
+      "role": "instantiated exact upstream LiteDRAM2024.12"
+    },
+    {
+      "file": "/opt/gamebub-litex-20261021/phase3-memory-python/litedram/core/crossbar.py",
+      "sha256": "0b7f20387c560d9809e1b8a1741b880fd25f226600518fe7b1aa340915d1c272",
+      "role": "instantiated exact upstream LiteDRAM2024.12"
+    },
+    {
+      "file": "/opt/gamebub-litex-20261021/phase3-memory-python/litedram/frontend/wishbone.py",
+      "sha256": "c452f695150bbdc724d93e8e47f49a5ab33591af0c66a94def778abe7cceb937",
+      "role": "instantiated exact upstream LiteDRAM2024.12"
+    },
+    {
+      "file": "/opt/gamebub-litex-20261021/venv/lib/python3.10/site-packages/litex/soc/interconnect/wishbone.py",
+      "sha256": "26fd14c2813266458775c714dad230968dcb49a1feedb434f84c5e77f40f6f8c",
+      "role": "Wishbone bus and upstream SRAM differential reference"
+    }
+  ]
+}

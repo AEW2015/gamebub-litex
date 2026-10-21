@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: 0BSD
+__pycache__/
+*.pyc
+build/
+.venv/
+*.bit
+*.elf
+*.bin
+*.vvp
+*.fasm
+*.frames
+*.log
+obj_dir/
+.env
+.env.*
+# Local frozen-release packagers require private historical handoffs.
+**/package*.py
+phase4/loader/DISCOVERY.md

@@ -1,0 +1,196 @@
+{
+  "schema": 2,
+  "created_utc": "2026-10-21",
+  "scope": "BRAM-only Linux LiteX build and simulation; no AMD tools or hardware access",
+  "distribution": "MRS-HDL-Research Ubuntu 22.04 x86_64",
+  "prefix": "/opt/gamebub-litex-20261021",
+  "python": "3.10.12",
+  "venv": "/opt/gamebub-litex-20261021/venv",
+  "bootstrap": "soc/bootstrap_soc.sh",
+  "pip_report": "/opt/gamebub-litex-20261021/pip-install-report.json",
+  "hash_manifest": "/opt/gamebub-litex-20261021/downloads.sha256",
+  "global_package_changes": false,
+  "python_pins": {
+    "litex": "2024.12",
+    "migen": "0.10.0",
+    "pythondata-cpu-vexriscv": "1.0.1.post407",
+    "pythondata-software-picolibc": "1.7.9.post181",
+    "pythondata-software-compiler-rt": "0.0.post6206",
+    "pip": "24.3.1",
+    "setuptools": "75.6.0",
+    "wheel": "0.45.1",
+    "meson": "1.6.1",
+    "ninja": "1.11.1.3",
+    "pyserial": "3.5",
+    "packaging": "24.2",
+    "requests": "2.32.3",
+    "colorama": "0.4.6",
+    "charset-normalizer": "3.4.0",
+    "idna": "3.10",
+    "urllib3": "2.2.3",
+    "certifi": "2024.12.14"
+  },
+  "embedded_source_pins": {
+    "vexriscv": "5f0c7a7faf6b65c907a93be6e3723e297d37ee71",
+    "picolibc": "f165dc22f1f67e3e8bdc8edf750ff7dc596de2ff",
+    "compiler_rt": "81fb4f00c2cfe13814765968e09931ffa93b5138"
+  },
+  "vexriscv_variant": {
+    "name": "minimal",
+    "file": "venv/lib/python3.10/site-packages/pythondata_cpu_vexriscv/verilog/VexRiscv_Min.v",
+    "sha256": "a2f6dbdab57278866f6b371b5b7d8b74bc813444757ef06195e8559f0d02e279",
+    "generation": "Pre-generated upstream Verilog; no Java or SpinalHDL build"
+  },
+  "gcc": {
+    "package": "gcc-riscv64-unknown-elf",
+    "version": "10.2.0-0ubuntu1",
+    "binutils": "2.35.1-0ubuntu1",
+    "executable": "/opt/gamebub-litex-20261021/toolchain/usr/bin/riscv64-unknown-elf-gcc",
+    "rv32i_libgcc": "/opt/gamebub-litex-20261021/toolchain/usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32i/ilp32/libgcc.a",
+    "relocation": "Private compiler executable prefix as/ld symlinks to ../../../riscv64-unknown-elf/bin/as and ld",
+    "flags": "-march=rv32i -mabi=ilp32",
+    "caution": "GCC 10.2 -march=rv32i2p0 assembles successfully but does not select RV32 multilib libgcc. Use -march=rv32i when linking libgcc."
+  },
+  "verified": [
+    "venv pip check passed",
+    "LiteX/Migen/pythondata imports passed",
+    "GCC RV32I assembly passed",
+    "GCC multilib list includes rv32i/ilp32"
+  ],
+  "sources": [
+    "https://github.com/enjoy-digital/litex",
+    "https://github.com/litex-hub/pythondata-cpu-vexriscv",
+    "https://pypi.org/project/litex/2024.12/",
+    "http://archive.ubuntu.com/ubuntu"
+  ],
+  "downloads": [
+    {
+      "file": "binutils-riscv64-unknown-elf_2.35.1-0ubuntu1_amd64.deb",
+      "sha256": "e843ec1406f5ddfd19fb517c6328ec2ec71481949126986bd9d2502cfb347267",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/b/binutils-riscv64-unknown-elf/binutils-riscv64-unknown-elf_2.35.1-0ubuntu1_amd64.deb",
+      "provenance": "Ubuntu Jammy published binary package; privately extracted; not locally built"
+    },
+    {
+      "file": "certifi-2024.12.14-py3-none-any.whl",
+      "sha256": "1275f7a45be9464efc1173084eaa30f866fe2e47d389406136d332ed4967ec56",
+      "url": "https://files.pythonhosted.org/packages/a5/32/8f6669fc4798494966bf446c8c4a162e0b5d893dff088afddf76414f70e1/certifi-2024.12.14-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "charset_normalizer-3.4.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "7f683ddc7eedd742e2889d2bfb96d69573fde1d92fcb811979cdb7165bb9c7d3",
+      "url": "https://files.pythonhosted.org/packages/f8/01/344ec40cf5d85c1da3c1f57566c59e0c9b56bcc5566c08804a95a6cc8257/charset_normalizer-3.4.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "url": "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "gcc-riscv64-unknown-elf_10.2.0-0ubuntu1_amd64.deb",
+      "sha256": "3385ad3d2e8f9b076fe73a2559393ff34f14c51556ec2f3595f042d6e6e06bfb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/gcc-riscv64-unknown-elf/gcc-riscv64-unknown-elf_10.2.0-0ubuntu1_amd64.deb",
+      "provenance": "Ubuntu Jammy published binary package; privately extracted; not locally built"
+    },
+    {
+      "file": "idna-3.10-py3-none-any.whl",
+      "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3",
+      "url": "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "litex-2024.12-py3-none-any.whl",
+      "sha256": "f4ffd571540f19101e3fbebc4e945919f74254bb38292ecd79db71f9acd1dc7e",
+      "url": "https://files.pythonhosted.org/packages/55/a4/9498912de1783ceb440b453abbc8e704df9affc4a65491b077b3913c2d54/litex-2024.12-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "meson-1.6.1-py3-none-any.whl",
+      "sha256": "3f41f6b03df56bb76836cc33c94e1a404c3584d48b3259540794a60a21fad1f9",
+      "url": "https://files.pythonhosted.org/packages/d2/f3/9d53c24a7113e08879b14117f83e7105251e6ecf7e03bb7c04926888db9c/meson-1.6.1-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "migen-0.10.0-py3-none-any.whl",
+      "sha256": "e2ba5a11906c46a434a39fa73c0881ed4ad697619492e7d28b9b30954a17bc4c",
+      "url": "https://files.pythonhosted.org/packages/98/ff/76f04ee0395e65110ed362a1c6be5971055a0da4d522e8209b1877e6e54d/migen-0.10.0-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "ninja-1.11.1.3-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl",
+      "sha256": "a27e78ca71316c8654965ee94b286a98c83877bfebe2607db96897bbfe458af0",
+      "url": "https://files.pythonhosted.org/packages/6b/35/a8e38d54768e67324e365e2a41162be298f51ec93e6bd4b18d237d7250d8/ninja-1.11.1.3-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "packaging-24.2-py3-none-any.whl",
+      "sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759",
+      "url": "https://files.pythonhosted.org/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "pip-24.3.1-py3-none-any.whl",
+      "sha256": "3790624780082365f47549d032f3770eeb2b1e8bd1f7b2e02dace1afa361b4ed",
+      "url": "https://files.pythonhosted.org/packages/ef/7d/500c9ad20238fcfcb4cb9243eede163594d7020ce87bd9610c9e02771876/pip-24.3.1-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "pyserial-3.5-py2.py3-none-any.whl",
+      "sha256": "c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0",
+      "url": "https://files.pythonhosted.org/packages/07/bc/587a445451b253b285629263eb51c2d8e9bcea4fc97826266d186f96f558/pyserial-3.5-py2.py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "pythondata_cpu_vexriscv-1.0.1.post407-py3-none-any.whl",
+      "sha256": "8fbdd9ee58ab2300343846e12a70e8f8f882eced13456c359a6b65a442ce0fbc",
+      "url": "https://files.pythonhosted.org/packages/3e/97/c22913b8d1c6e43efc2e9c465b926110fa1c81100cefc2605ce689fa4505/pythondata_cpu_vexriscv-1.0.1.post407-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "pythondata_software_compiler_rt-0.0.post6206-py3-none-any.whl",
+      "sha256": "dcaa7c6cc09a47271a98e9a9b47834b31384919aaa74034e0f184d3e9068c11e",
+      "url": "https://files.pythonhosted.org/packages/1c/32/b93385d2ec34296c33fe39035f8266905052e5cc269c571d3d6cafcf51a3/pythondata_software_compiler_rt-0.0.post6206-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "pythondata_software_picolibc-1.7.9.post181-py3-none-any.whl",
+      "sha256": "75122e28be9aeb6311fd6de36bdac38921ea18cda4f4e0a330375ba4d4e9e566",
+      "url": "https://files.pythonhosted.org/packages/a6/b3/09b9b943de8fb94de8b0afd5baed0beb9a95fd677e70759cecd212d8c30b/pythondata_software_picolibc-1.7.9.post181-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "requests-2.32.3-py3-none-any.whl",
+      "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+      "url": "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "setuptools-75.6.0-py3-none-any.whl",
+      "sha256": "ce74b49e8f7110f9bf04883b730f4765b774ef3ef28f722cce7c273d253aaf7d",
+      "url": "https://files.pythonhosted.org/packages/55/21/47d163f615df1d30c094f6c8bbb353619274edccf0327b185cc2493c2c33/setuptools-75.6.0-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "urllib3-2.2.3-py3-none-any.whl",
+      "sha256": "ca899ca043dcb1bafa3e262d73aa25c465bfb49e0bd9dd5d59f1d0acba2f8fac",
+      "url": "https://files.pythonhosted.org/packages/ce/d9/5f4c13cecde62396b0d3fe530a50ccea91e7dfc1ccf0e09c228841bb5ba8/urllib3-2.2.3-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    },
+    {
+      "file": "wheel-0.45.1-py3-none-any.whl",
+      "sha256": "708e7481cc80179af0e556bbf0cc00b8444c7321e2700b8d8580231d13017248",
+      "url": "https://files.pythonhosted.org/packages/0b/2c/87f3254fd8ffd29e4c02732eee68a83a1d3c346ae39bc6822dcbcb697f2b/wheel-0.45.1-py3-none-any.whl",
+      "provenance": "PyPI release wheel; upstream published; not locally built"
+    }
+  ],
+  "archive_policy": {
+    "helper": "soc/verify_downloads.py",
+    "download": "Exact locked artifact URLs; no dependency resolution or local wheel builds",
+    "validation": "All 20 locked SHA256 values verified before any pip installation or dpkg extraction",
+    "migen": "Upstream PyPI wheel; published filename and hash independently checked through PyPI JSON metadata",
+    "initial_install": "Initial installation recorded archive hashes after install; revised bootstrap enforces those hashes before install",
+    "audit": "Existing installed prefix preserved; verification-only pass performed on its downloads"
+  }
+}
